@@ -1,0 +1,35 @@
+.about {
+  &__body {
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+
+  &__left {
+    h4 {
+      color: #b9a889;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: "Rufina", serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      margin-bottom: 10%;
+    }
+
+    p {
+      color: #615d5b;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__right {
+    img {
+      width: 100%;
+    }
+  }
+}

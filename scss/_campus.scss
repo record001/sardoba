@@ -1,0 +1,51 @@
+.campus {
+  background-image: url(../img/capmus_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__img1 {
+    opacity: 0.5;
+    position: absolute;
+    top: 44%;
+    right: 4%;
+    // width: 70px;
+
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 62% 32%;
+    column-gap: 6%;
+    padding: 8% 0;
+  }
+
+  &__left {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    h4 {
+      color: #b9a889;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: "Rufina", serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      margin-bottom: 10%;
+    }
+
+    p {
+      color: #615d5b;
+      margin-bottom: 10px;
+    }
+  }
+}
+
