@@ -1,0 +1,136 @@
+.courses {
+  padding: 50px 0;
+
+  &__title {
+    color: #3e2b26;
+    font-family: "Rufina",serif;
+    font-size: 4.667em;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 0.933em;
+    line-height: 1.3em;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b9a889;
+    margin-top: 1.2em;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 2%;
+
+    margin-top: 8%;
+
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__top1 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/fortepiano.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+    &__top2 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/dutor.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+    &__top3 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/teatr.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+    &__top4 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/estrada.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+    &__top5 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/art.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+    &__top6 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/amaliy1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+    &__top7 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/opera.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+     
+     
+    }
+    &__top8 {
+      border: 1px solid gold;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+      background-image: url(../img/course/guitar.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+     
+    }
+  }
+}

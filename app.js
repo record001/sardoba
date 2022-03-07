@@ -15,11 +15,16 @@ window.addEventListener("scroll", () => {
     logo_text.style.lineHeight = "22px";
   }
 });
+
 /*
+
 window.addEventListener("scroll", ()=> {
 
-  console.log(window.innerHeight);
+
+  // console.log(window.innerHeight);
   if (window.scrollY > 1800) {
+
+   
 
     function animateValue(obj, start, end, duration) {
       let startTimestamp = null;
@@ -47,9 +52,8 @@ window.addEventListener("scroll", ()=> {
 })
 
 */
-
-document.querySelector(".facts").addEventListener("mouseenter", () => {
-
+let facts = document.querySelector(".facts");
+facts.addEventListener("mouseenter", () => {
   function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
