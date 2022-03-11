@@ -1,3 +1,5 @@
+
+
 .courses {
   padding: 50px 0 0;
 
@@ -69,6 +71,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
 
      
      
@@ -82,6 +85,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
+
      
      
     }
@@ -94,6 +99,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
+
      
      
     }
@@ -105,6 +112,8 @@
       background-image: url(../img/course/estrada.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
+
      
      
     }
@@ -117,6 +126,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 90%;
+      pointer-events: none;
+
      
      
     }
@@ -129,6 +140,8 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
+
      
      
     }
@@ -141,6 +154,8 @@
       background-position: 0% 50%;
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
+
       
      
      
@@ -154,6 +169,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      pointer-events: none;
+
      
      
     }
@@ -162,6 +179,8 @@
       color: #3e2b26;
       margin-top: 10%;
       text-align: center;
+      pointer-events: none;
+
       
     }
 
@@ -169,6 +188,66 @@
       color: #615d5b;
       text-align: center;
       margin-top: 5%;
+      pointer-events: none;
     }
   }
+
+
+  // modal
+
+  &__modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    left: 0%;
+
+   
+
+    .course__close_btn {
+     
+      color: #fff;
+      font-size: 50px;
+
+      position: fixed;
+      right: 2%;
+      top: 2%;
+
+      &:hover {
+        color: rgba(255, 217, 0, 0.938);
+        cursor: pointer;
+        transition: 500ms;
+      }
+    }
+
+
+    &__body {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 50% 38%;
+      column-gap: 2%;
+    }
+
+    &__left {
+      background-color: #615d5b;
+      height: 500px;
+      margin-left: 50px;
+    }
+
+    &__right {
+      background-color: gold;
+      height: 500px;
+    }
+  }
+}
+
+.d_block {
+  display: block;
+}
+
+.d_none {
+  display: none;
 }
