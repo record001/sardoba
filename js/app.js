@@ -82,7 +82,8 @@ facts.addEventListener("mouseenter", () => {
 let course__close_btn = document.querySelector(".course__close_btn");
 let courses__modal = document.querySelector(".courses__modal");
 let courses__card = document.querySelectorAll(".courses__card");
-let courses__modal__right = document.querySelector(".courses__modal__right")
+let right__top = document.querySelector(".right__top")
+let right__bottom = document.querySelector(".right__bottom")
 let courses__carousel  =document.querySelector(".courses__carousel")
 
 course__close_btn.addEventListener("click", () => {
@@ -92,7 +93,7 @@ course__close_btn.addEventListener("click", () => {
 
 courses__card.forEach((card) => {
   card.addEventListener("click", (event) => {
-
+    right__bottom.innerHTML = null
     courses__modal.classList.remove("d_none");
     courses__modal.classList.add("d_block");
 
@@ -101,22 +102,27 @@ courses__card.forEach((card) => {
 
     let card = course.filter(item => id == item.id)
 
-    console.log(card[0].title);
 
-    courses__modal__right.innerHTML = `
-    <h2>${card[0].title}</h2>
-    <p>${card[0].description}.</p>
-    <p>${card[0].cost}</p>    `
+    right__top.innerHTML = `
+    <h2 class ="c1">${card[0].title}</h2>
+    <p class ="c2">${card[0].description}</p>
+    <p class ="c3">${card[0].cost}</p>
+    <p class ="c4">${card[0].perWeek}</p> `
+
+    card[0].teachers.forEach(t => {
+     return right__bottom.innerHTML += `<p class ="c5">${t}</p>`} ) 
+   
+     
    
     courses__carousel.innerHTML = `
-    <div class="carousel-item active">
-    <img class="d-block w-100" src=${card[0].img[0]}  alt="First slide">
+    <div class="carousel-item active ">
+    <img class="d-block  " src=${card[0].img[0]}  alt="First slide">
   </div>
-  <div class="carousel-item">
-    <img class="d-block w-100" src=${card[0].img[1]}  alt="Second slide">
+  <div class="carousel-item ">
+    <img class="d-block  " src=${card[0].img[1]}  alt="Second slide">
   </div>
-  <div class="carousel-item">
-    <img class="d-block w-100" src=${card[0].img[2]} alt="Third slide">
+  <div class="carousel-item ">
+    <img class="d-block  " src=${card[0].img[2]} alt="Third slide">
   </div>
     `
   });
