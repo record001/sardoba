@@ -33,3 +33,24 @@
     }
   }
 }
+
+@media(max-width: 500px) {
+  .about__body {
+    padding: 40px 0;
+    grid-template-columns: 80%;
+    // align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .about__left {
+    h2 {
+        font-size: 38px;
+        line-height: 50px;
+        margin-bottom: 5%;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}

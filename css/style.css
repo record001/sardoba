@@ -261,6 +261,121 @@ header {
   color: #fff;
 }
 
+.modal {
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  z-index: 30;
+  width: 100vw;
+  background-color: #181a1a;
+}
+
+.modal.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.modal__list {
+  width: 40%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__link {
+  margin-bottom: 14px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.modal__link:hover {
+  color: rgba(255, 255, 255, 0.404);
+}
+
+.burger {
+  display: none;
+  position: fixed;
+  right: 25px;
+  top: 15px;
+  z-index: 35;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #000;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 500px) {
+  .burger {
+    display: inline-block;
+  }
+  .modal {
+    display: block;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav .logo {
+    width: 45%;
+  }
+  .carousel__title h1 {
+    font-size: 30px;
+  }
+  .carousel__title h4 {
+    font-size: 18px;
+  }
+  .carousel__title a {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -344,6 +459,26 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .about__body {
+    padding: 40px 0;
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .about__left h2 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 5%;
+  }
+  .about__left p {
+    text-align: left;
+  }
+}
+
 .campus {
   background-image: url(../img/capmus_bg.jpg);
   background-position: center;
@@ -391,6 +526,28 @@ h1, h2, h3, h4, h5, h6, p {
 .campus__right p {
   color: #615d5b;
   margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .campus__body {
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 5%;
+    text-align: center;
+  }
+  .campus__img1 {
+    opacity: 0.3;
+  }
+  .campus__right h4 {
+    margin-bottom: 10px;
+  }
+  .campus__right h2 {
+    font-size: 45px;
+    margin-bottom: 3%;
+  }
 }
 
 #value {
@@ -454,6 +611,34 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .facts__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .facts__item__left {
+    width: 70px;
+    height: 70px;
+  }
+  .facts__item__left .im {
+    width: 45px;
+  }
+  .facts__item__right {
+    text-align: center;
+  }
+  .facts__item__right h4 {
+    font-size: 20px;
+  }
+}
+
 .courses {
   padding: 50px 0 0;
 }
@@ -485,6 +670,9 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-column-gap: 2%;
           column-gap: 2%;
   row-gap: 12%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 8%;
   margin-bottom: 10%;
   width: 100%;
@@ -508,8 +696,8 @@ h1, h2, h3, h4, h5, h6, p {
 .courses__card:hover {
   -webkit-transition: ease-in 300ms;
   transition: ease-in 300ms;
-  -webkit-box-shadow: 0px 5px 10px #000;
-          box-shadow: 0px 5px 10px #000;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }
 
@@ -528,99 +716,67 @@ h1, h2, h3, h4, h5, h6, p {
   transition: ease-out 200ms;
 }
 
-.courses__card__top1 {
+.courses__card .top {
   border: 1px solid gold;
   height: 150px;
   width: 150px;
   border-radius: 100%;
+  pointer-events: none;
+}
+
+.courses__card__top1 {
   background-image: url(../img/course/fortepiano1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card__top2 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/dutor.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card__top3 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/teatr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card__top4 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/estrada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card__top5 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/art.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
-  pointer-events: none;
 }
 
 .courses__card__top6 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/amaliy1.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card__top7 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/opera.jpg);
   background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card__top8 {
-  border: 1px solid gold;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
   background-image: url(../img/course/guitar.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  pointer-events: none;
 }
 
 .courses__card h3 {
@@ -722,6 +878,19 @@ h1, h2, h3, h4, h5, h6, p {
 
 .d_none {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .courses {
+    padding: 20px 0 0;
+  }
+  .courses__title {
+    font-size: 3em;
+  }
+  .courses__card .top {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .teacher {
@@ -874,5 +1043,54 @@ h1, h2, h3, h4, h5, h6, p {
   border: 8px solid gold;
   -webkit-transition: ease 1000ms;
   transition: ease 1000ms;
+}
+
+.contact__body {
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.contact__rigth {
+  text-align: center;
+}
+
+.contact__rigth h2 {
+  color: #3e2b26;
+  font-family: "Rufina", serif;
+  font-size: 3.667em;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1em;
+  letter-spacing: -1.4px;
+  margin-bottom: 20px;
+}
+
+.contact__rigth h4 {
+  color: #3e2b26;
+  line-height: 1.12em;
+  font-family: "Rufina", serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.44em;
+  letter-spacing: -0.5px;
+}
+
+.contact__rigth hr {
+  margin: 30px auto;
+  width: 300px;
+}
+
+.contact__rigth p {
+  color: #e7b622;
+}
+
+.contact__rigth p:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: #615d5b;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -82,9 +82,9 @@ facts.addEventListener("mouseenter", () => {
 let course__close_btn = document.querySelector(".course__close_btn");
 let courses__modal = document.querySelector(".courses__modal");
 let courses__card = document.querySelectorAll(".courses__card");
-let right__top = document.querySelector(".right__top")
-let right__bottom = document.querySelector(".right__bottom")
-let courses__carousel  =document.querySelector(".courses__carousel")
+let right__top = document.querySelector(".right__top");
+let right__bottom = document.querySelector(".right__bottom");
+let courses__carousel = document.querySelector(".courses__carousel");
 
 course__close_btn.addEventListener("click", () => {
   courses__modal.classList.remove("d_block");
@@ -93,27 +93,25 @@ course__close_btn.addEventListener("click", () => {
 
 courses__card.forEach((card) => {
   card.addEventListener("click", (event) => {
-    right__bottom.innerHTML = null
+    right__bottom.innerHTML = null;
     courses__modal.classList.remove("d_none");
     courses__modal.classList.add("d_block");
 
-    let id = event.target.dataset.id
+    let id = event.target.dataset.id;
     // console.log(event.target.dataset.id);
 
-    let card = course.filter(item => id == item.id)
-
+    let card = course.filter((item) => id == item.id);
 
     right__top.innerHTML = `
     <h2 class ="c1">${card[0].title}</h2>
     <p class ="c2">${card[0].description}</p>
     <p class ="c3">${card[0].cost}</p>
-    <p class ="c4">${card[0].perWeek}</p> `
+    <p class ="c4">${card[0].perWeek}</p> `;
 
-    card[0].teachers.forEach(t => {
-     return right__bottom.innerHTML += `<p class ="c5">${t}</p>`} ) 
-   
-     
-   
+    card[0].teachers.forEach((t) => {
+      return (right__bottom.innerHTML += `<p class ="c5">${t}</p>`);
+    });
+
     courses__carousel.innerHTML = `
     <div class="carousel-item active ">
     <img class="d-block  " src=${card[0].img[0]}  alt="First slide">
@@ -124,8 +122,38 @@ courses__card.forEach((card) => {
   <div class="carousel-item ">
     <img class="d-block  " src=${card[0].img[2]} alt="Third slide">
   </div>
-    `
+    `;
   });
 });
 
+// modal
+// let nav = document.querySelector(".nav");
+let modal = document.querySelector(".modal");
+let modal_link = document.querySelectorAll(".modal__link");
+// console.log(modal_link);
+let burger = document.querySelector(".burger");
+let bar = document.querySelectorAll(".bar");
 
+// burger
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  modal.classList.toggle("active");
+  
+  if (modal.classList.contains("active")) {
+    bar.forEach((item) => {
+      item.style.backgroundColor = "white";
+    });
+  } else {
+    bar.forEach((item) => {
+      item.style.backgroundColor = "black";
+    });
+  }
+}
+
+modal_link.forEach((link) => {
+  link.addEventListener("click", () => {
+    myFunction(burger);
+    modal.classList.remove("active");
+  });
+});

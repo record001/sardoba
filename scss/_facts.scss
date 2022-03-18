@@ -46,3 +46,28 @@
 
   }
 }
+
+@media(max-width: 500px) {
+  .facts__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+      width: 70px;
+      height: 70px;
+
+      .im {
+        width: 45px;
+      }
+    }
+
+    &__right {
+      text-align: center;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+}

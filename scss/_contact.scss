@@ -1,0 +1,45 @@
+.contact {
+  &__body {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__rigth {
+    text-align: center;
+    h2 {
+      color: #3e2b26;
+      font-family: "Rufina", serif;
+      font-size: 3.667em;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1em;
+
+      letter-spacing: -1.4px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      color: #3e2b26;
+      line-height: 1.12em;
+      font-family: "Rufina", serif;
+      font-size: 1.6em;
+      font-weight: 700;
+      line-height: 1.44em;
+      letter-spacing: -0.5px;
+    }
+    hr {
+      margin: 30px auto;
+      width: 300px;
+    }
+
+    p {
+      color: #e7b622;
+      &:hover {
+        transition: 300ms ;
+        color: #615d5b;
+        cursor: pointer;
+      }
+    }
+  }
+}

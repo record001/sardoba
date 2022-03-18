@@ -49,3 +49,33 @@
   }
 }
 
+
+
+@media(max-width:500px) {
+  .campus__body {
+    grid-template-columns: 80%;
+    justify-content: center;
+    row-gap: 5%;
+    text-align: center;
+
+  }
+
+  .campus__img1 {
+    opacity: 0.3;
+  }
+
+  .campus__right {
+      h4 {
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 45px;
+        margin-bottom: 3%;
+
+      }
+
+      
+
+
+  }
+}
