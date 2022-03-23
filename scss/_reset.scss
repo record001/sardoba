@@ -49,3 +49,43 @@ h1, h2, h3, h4, h5, h6,p {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+
+  #up {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 50px;
+    font-size: 40px;
+    animation: up 10s infinite;
+    i {
+      color: #3b3004;
+    }
+  }
+  
+  @keyframes up {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    1% {
+      transform: translateY(-10px);
+    }
+  
+    2% {
+      transform: translateY(0px);
+    }
+  
+    3% {
+      transform: translateY(-10px);
+    }
+  
+    4% {
+      transform: translateY(0px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }

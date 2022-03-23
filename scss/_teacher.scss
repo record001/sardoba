@@ -82,49 +82,45 @@
       border-radius: 50%;
       width: 230px;
       height: 230px;
-      .img1 {
+
+      .avatar {
         border-radius: 50%;
         width: 200px;
         height: 200px;
+        margin: auto;
+        margin-top: 7px;
+      }
+      .img1 {
+        
         background-image: url(../img/teacher/ABaxtigul.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        margin: auto;
-        margin-top: 7px;
+        
       }
       .img2 {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
+        
         background-image: url(../img/teacher/BLobar.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        margin: auto;
-        margin-top: 7px;
+        
       }
       .img3 {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
+        
         background-image: url(../img/teacher/KGulnora.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        margin: auto;
-        margin-top: 7px;
+        
       }
       .img4 {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
+       
         background-image: url(../img/teacher/QMaxsuda.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        margin: auto;
-        margin-top: 7px;
+        
       }
     }
 
@@ -133,6 +129,49 @@
         border: 8px solid gold;
         transition: ease 1000ms;
       }
+    }
+  }
+}
+
+
+// media
+
+@media(max-width: 500px) {
+  .teacher {
+
+    &__piano {
+      display: none;
+    }
+
+    &__card {
+      .card_img {
+        border: 2px solid transparent;
+        width: 100px;
+        height: 100px;
+        &:hover {
+        border: 2px solid gold;
+
+        }
+
+        .avatar {
+          margin-top: 3px;
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+    .t_job {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 40px;
+    }
+
+    h4 {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    p {
+      margin-bottom: 20px;
     }
   }
 }

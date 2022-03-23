@@ -1,0 +1,273 @@
+.top {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background: url(../img/SLIDE2.jpg) no-repeat center / cover;
+  padding: 50px 0;
+
+  &__title {
+    font-size: 60px;
+    font-weight: 900;
+    color: red;
+    text-align: center;
+  }
+}
+
+.about_teachers {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 5px;
+  box-shadow: 0px 0px 14px #000;
+  border-radius: 5px;
+
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.teachMenu {
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: #fafafa;
+
+  .dCard {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    .qodirov {
+      width: 60%;
+      height: 400px;
+      margin: 0 auto;
+
+      background: url(../img/teacher/ABaxtigul.jpg) no-repeat center / cover;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    h2 {
+      margin-bottom: 100px;
+      span {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .course_name {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  .tCard {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 25% 40%;
+    column-gap: 5%;
+    justify-content: center;
+
+    // fortepiano
+    .lobar {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/BLobar.jpg) no-repeat center / cover;
+    }
+    .abdulla {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/EAbdulla.jpg) no-repeat center / cover;
+    }
+    .ogiloy {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/FOgiloy.jpg) no-repeat center / cover;
+    }
+    .begzod {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/JBegzod.jpg) no-repeat center /
+        cover;
+    }
+    .sardor {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/JSardor.jpg) no-repeat center / cover;
+    }
+    .gulnora {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/KGulnora.jpg) no-repeat center / cover;
+    }
+    .matluba {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/MMatluba.jpg) no-repeat center / cover;
+    }
+    .hilola {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/MHilola.jpg) no-repeat center / cover;
+    }
+    .zulxumor {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/MZulxumor.jpg) no-repeat center / cover;
+    }
+
+    .zuhriddin {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/NZuhriddin.jpg) no-repeat center / cover;
+    }
+    .charos {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/QCharos.jpg) no-repeat center / cover;
+    }
+    .fayzullo {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/QFayzulla.jpg) no-repeat center /cover;
+    }
+    .maxsuda {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/QMaxsuda.jpg) no-repeat center / cover;
+    }
+    // .muqaddas {
+    //   height: 300px;
+    //   box-shadow: 0 0 14px rgb(16, 3, 63);
+    //   border-radius: 5px;
+    //   background: url(../img/teacher/QMuqaddas.jpg) no-repeat center / cover;
+    // }
+    .muxlisa {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/QMuxlisa.jpg) no-repeat center / cover;
+    }
+    .husan {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/SHusan.jpg) no-repeat center / cover;
+    }
+    .tfarogat {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/TFarogat.jpg) no-repeat center / cover;
+    }
+    .xfarogat {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/XFarogat.jpg) no-repeat center / cover;
+    }
+    .lutfinisa {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/XLutfinisa.jpg) no-repeat center / cover;
+    }
+    .sevinch {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../img/teacher/ZSevincha.jpg) no-repeat center / cover;
+    }
+
+    h2 {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: 19px;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .top__title {
+    font-size: 40px;
+  }
+  #up {
+    right: 20px;
+  }
+
+  .about_teachers {
+    width: 80%;
+  }
+
+  .teachMenu .dCard .qodirov {
+    width: 80%;
+  }
+
+  .teachMenu .dCard {
+    width: 100%;
+  }
+  .teachMenu .dCard p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .teachMenu .dCard h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .teachMenu .dCard h2 span {
+    font-size: 13px;
+  }
+
+  .teachMenu .tCard {
+    grid-template-columns: 80%;
+  }
+  .teachMenu .tCard h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .teachMenu .tCard p {
+    font-size: 15px;
+  }
+
+  .teachMenu .course_name {
+    font-size: 25px;
+  }
+
+  .modal__list {
+    width: 60%;
+  }
+}

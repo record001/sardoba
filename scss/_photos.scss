@@ -1,0 +1,166 @@
+.header_bg {
+  background-color: rgba(0, 0, 0, 0.692);
+  width: 100%;
+  height: 105px;
+}
+
+
+.modal_photo {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.884);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+
+  &__close {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    &:hover {
+      cursor: pointer;
+      i {
+        color: rgba(255, 255, 255, 0.466);
+      }
+    }
+    i {
+      color: #fff;
+      font-size: 40px;
+      pointer-events: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 1%;
+    // left: 3%;
+    display: flex;
+    justify-content: center;
+    width: 90%; // 80%
+    margin: auto;
+    height: 98%; // 90%
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+.modal_photo_db {
+  display: block;
+}
+.photos {
+  padding: 20px 0;
+  &__title {
+    font-size: 60px;
+    font-weight: 900;
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__blur {
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    width: 100%;
+    height: 200px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      &::after {
+        transform: translateX(300px);
+      }
+    }
+    &::after {
+      content: "";
+      transition: 500ms;
+
+      display: block;
+      background-color: rgba(0, 0, 0, 0.411);
+      color: rgb(230, 25, 25);
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transform: translateX(0px);
+    }
+  }
+
+  &__first {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 20% 13% 17% 15% 1fr;
+    // column-gap: 1%;
+    gap: 0.2%;
+    justify-content: center;
+  }
+  &__second {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 15% 17% 15% 13% 1fr;
+    gap: 0.2%;
+    justify-content: center;
+  }
+  &__third {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13% 17% 15% 20% 15% 1fr;
+    gap: 0.2%;
+    justify-content: center;
+  }
+  &__forth {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13% 17% 15% 20% 15% 1fr;
+    gap: 0.2%;
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .photos {
+    &__title {
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    &__blur {
+      &::after {
+        display: none;
+      }
+    }
+
+    &__first {
+      grid-template-columns: 33% 33% 1fr;
+    }
+    &__second {
+      grid-template-columns: 33% 33% 1fr;
+    }
+    &__third {
+      grid-template-columns: 33% 33% 1fr;
+    }
+  }
+
+  .vinetka .carousel .carousel-items .carousel-item {
+    visibility: hidden;
+  }
+  .vinetka .carousel .carousel-items .carousel-item.active {
+    width: 80%;
+    visibility: visible;
+  }
+
+  $carousel_width: 10vw; // 70vw custom : in px or vw/vh please!
+  $carousel_height: 450px;
+}

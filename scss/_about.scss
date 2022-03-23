@@ -3,6 +3,7 @@
     padding: 70px 0;
     display: grid;
     grid-template-columns: 35% 65%;
+    
   }
 
   &__left {
@@ -44,8 +45,8 @@
   }
   .about__left {
     h2 {
-        font-size: 38px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 40px;
         margin-bottom: 5%;
     }
 

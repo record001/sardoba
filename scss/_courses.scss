@@ -48,7 +48,7 @@
       cursor: pointer;
     }
 
-    &:hover .top {
+    &:hover .c__top {
       transition: ease-in 300ms;
       border: none;
       width: 90%;
@@ -59,7 +59,7 @@
       transform: scale(1.1);
       transition: ease-out 200ms;
     }
-    .top {
+    .c__top {
       border: 1px solid gold;
       height: 150px;
       width: 150px;
@@ -147,7 +147,7 @@
     height: 100%;
     background-color: rgb(0, 0, 0);
     position: fixed;
-    z-index: 10;
+    z-index: 40;
     top: 0%;
     left: 0%;
 
@@ -156,6 +156,7 @@
       font-size: 50px;
 
       position: fixed;
+      z-index: 40;
       right: 2%;
       top: 2%;
 
@@ -233,19 +234,47 @@
 
 @media(max-width: 500px)  {
   .courses {
-    padding: 20px 0 0;
+    padding: 20px 0 60px;
+    &__wrapper {
+      row-gap: 2%;
+      grid-template-columns: 40% 40%;
+    }
     &__title {
       font-size: 3em;
 
     }
     &__card {
-      .top {
-        width: 90px;
-        height: 90px;
+      // .c__top {
+      //   width: 90px;
+      //   height: 90px;
+      // }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        display: none;
       }
     }
     
+    &__modal__right .right__top .c1 {
+      font-size: 18px;
+    }
+
+    &__modal__right .right__top .c2 {
+      font-size: 10px;
+    }
   }
+ 
+  .courses__modal__right .right__top .c3, .courses__modal__right .right__top .c4  {
+    display: none;
+  }
+  .courses__modal__right .right__bottom {
+    display: none;
+  }
+
+  
 
 
 }
