@@ -574,8 +574,9 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 8% 0;
 }
 
-.campus__left img {
+.campus__left iframe {
   width: 100%;
+  height: 100%;
 }
 
 .campus__right h4 {
