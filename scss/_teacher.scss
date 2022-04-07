@@ -25,6 +25,7 @@
     margin-top: 20px;
     margin-bottom: 50px;
   }
+
   h4 {
     margin-top: 20px;
     color: #0c4b65;
@@ -90,37 +91,41 @@
         margin: auto;
         margin-top: 7px;
       }
+
       .img1 {
-        
+
         background-image: url(../img/teacher/ABaxtigul.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        
+
       }
+
       .img2 {
-        
+
         background-image: url(../img/teacher/BLobar.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        
+
       }
+
       .img3 {
-        
+
         background-image: url(../img/teacher/KGulnora.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        
+
       }
+
       .img4 {
-       
+
         background-image: url(../img/teacher/QMaxsuda.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
-        
+
       }
     }
 
@@ -148,8 +153,9 @@
         border: 2px solid transparent;
         width: 100px;
         height: 100px;
+
         &:hover {
-        border: 2px solid gold;
+          border: 2px solid gold;
 
         }
 
@@ -160,6 +166,7 @@
         }
       }
     }
+
     .t_job {
       font-size: 12px;
       line-height: 15px;
@@ -170,8 +177,29 @@
       font-size: 12px;
       margin-top: 10px;
     }
+
     p {
       margin-bottom: 20px;
     }
   }
+}
+
+@media(max-width: 400px) {
+  .teacher h2 {
+    font-size: 30px;
+  }
+
+  .teacher p {
+    font-size: 20px;
+    margin-top: 6px;
+  }
+
+  .teacher__wrapper {
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
 }

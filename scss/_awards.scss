@@ -248,3 +248,20 @@
 
 
 }
+
+@media(max-width: 400px) {
+
+
+  .awards {
+    .slider-container {
+      width: 300px;
+      height: 230px;
+
+      .slider-content {
+        width: 80%;
+        height: 75%;
+      }
+    }
+  }
+
+}

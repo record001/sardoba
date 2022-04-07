@@ -3,7 +3,7 @@
     padding: 70px 0;
     display: grid;
     grid-template-columns: 35% 65%;
-    
+
   }
 
   &__left {
@@ -43,15 +43,27 @@
     justify-content: center;
     text-align: center;
   }
+
   .about__left {
     h2 {
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 5%;
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 5%;
     }
 
     p {
       text-align: left;
     }
   }
+}
+
+@media(max-width: 400px) {
+  .about__left h4 {
+    margin-bottom: 10px;
+  }
+
+  .about__left h2 {
+    font-size: 25px;
+    line-height: 30px;
+    }
 }

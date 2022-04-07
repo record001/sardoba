@@ -362,7 +362,7 @@ header {
     display: none;
   }
   .nav .logo {
-    width: 65%;
+    width: 75%;
   }
   .carousel__title h1 {
     font-size: 30px;
@@ -374,6 +374,15 @@ header {
     width: 200px;
     height: 40px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel__title a {
+    margin-top: 5%;
+  }
+  .carousel__title h4 {
+    font-size: 13px;
   }
 }
 
@@ -549,6 +558,16 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media (max-width: 400px) {
+  .about__left h4 {
+    margin-bottom: 10px;
+  }
+  .about__left h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 .campus {
   background-image: url(../img/capmus_bg.jpg);
   background-position: center;
@@ -618,6 +637,16 @@ h1, h2, h3, h4, h5, h6, p {
   .campus__right h2 {
     font-size: 45px;
     margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 400px) {
+  .campus__right h2 {
+    font-size: 30px;
+    margin-bottom: 0%;
+  }
+  .campus__right h4 {
+    margin-bottom: 0px;
   }
 }
 
@@ -707,6 +736,16 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .facts__item__right h4 {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .facts__item__left {
+    width: 50px;
+    height: 50px;
+  }
+  .facts__item__left .im {
+    width: 30px;
   }
 }
 
@@ -936,7 +975,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 10px;
 }
 
-.courses__modal__right .right__top .c3, .courses__modal__right .right__top .c4 {
+.courses__modal__right .right__top .c3,
+.courses__modal__right .right__top .c4 {
   font-weight: 700;
 }
 
@@ -976,11 +1016,25 @@ h1, h2, h3, h4, h5, h6, p {
   .courses__modal__right .right__top .c2 {
     font-size: 10px;
   }
-  .courses__modal__right .right__top .c3, .courses__modal__right .right__top .c4 {
+  .courses__modal__right .right__top .c3,
+  .courses__modal__right .right__top .c4 {
     display: none;
   }
   .courses__modal__right .right__bottom {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .courses__title {
+    font-size: 2em;
+  }
+  .courses__subtitle {
+    margin-top: 0;
+  }
+  .courses__card .c__top {
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -1152,6 +1206,26 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .teacher p {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .teacher h2 {
+    font-size: 30px;
+  }
+  .teacher p {
+    font-size: 20px;
+    margin-top: 6px;
+  }
+  .teacher__wrapper {
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1452,6 +1526,17 @@ h1, h2, h3, h4, h5, h6, p {
   .awards__title h4 {
     font-size: 24px;
     word-spacing: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .awards .slider-container {
+    width: 300px;
+    height: 230px;
+  }
+  .awards .slider-container .slider-content {
+    width: 80%;
+    height: 75%;
   }
 }
 
